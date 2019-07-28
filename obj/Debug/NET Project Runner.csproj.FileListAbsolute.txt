@@ -1,0 +1,7 @@
+C:\rtarkowski\Personal\Projects\NET Project Runner\NET Project Runner\bin\Debug\NET Project Runner.exe.config
+C:\rtarkowski\Personal\Projects\NET Project Runner\NET Project Runner\bin\Debug\NET Project Runner.exe
+C:\rtarkowski\Personal\Projects\NET Project Runner\NET Project Runner\bin\Debug\NET Project Runner.pdb
+C:\rtarkowski\Personal\Projects\NET Project Runner\NET Project Runner\obj\Debug\NET Project Runner.csprojAssemblyReference.cache
+C:\rtarkowski\Personal\Projects\NET Project Runner\NET Project Runner\obj\Debug\NET Project Runner.csproj.CoreCompileInputs.cache
+C:\rtarkowski\Personal\Projects\NET Project Runner\NET Project Runner\obj\Debug\NET Project Runner.exe
+C:\rtarkowski\Personal\Projects\NET Project Runner\NET Project Runner\obj\Debug\NET Project Runner.pdb

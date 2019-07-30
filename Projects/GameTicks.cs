@@ -27,7 +27,7 @@ namespace NET_Project_Runner.Projects
         }
 
 
-        public void Run(ConsoleView _view)
+        public void Run(View _view)
         {
             Timer gameTick = new Timer(1000);
 

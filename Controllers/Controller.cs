@@ -10,10 +10,10 @@ namespace NET_Project_Runner.Controllers
 {
     public class Controller
     {
-        private ConsoleView _view;
+        private View _view;
         private Context _context;
 
-        public Controller(Context context, ConsoleView view)
+        public Controller(Context context, View view)
         {
             _context = context;
             _view = view;
@@ -37,7 +37,7 @@ namespace NET_Project_Runner.Controllers
                     proj.Run(_view);
 
                     Console.WriteLine("\n\nPress any key to continue.\n");
-                    _view.WaitForKey();
+                    _view.WaitForUser();
                 }
             }
         }
@@ -51,7 +51,7 @@ namespace NET_Project_Runner.Controllers
 
             while (key.Key != ConsoleKey.Enter)
             {
-                key = _view.GetKey();
+                key = (ConsoleKeyInfo) _view.GetKey();
 
                 switch (key.Key)
                 {

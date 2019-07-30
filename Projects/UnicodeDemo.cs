@@ -24,7 +24,7 @@ namespace NET_Project_Runner.Projects
             set { _name = value; }
         }
 
-        public void Run(ConsoleView _view)
+        public void Run(View _view)
         {
             Console.Clear();
 

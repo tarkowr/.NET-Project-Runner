@@ -24,15 +24,15 @@ namespace NET_Project_Runner
             set { _name = value; }
         }
 
-        public void Run(ConsoleView _view)
+        public void Run(View _view)
         {
             List<string> myList = new List<string>();
 
             myList = GetList(_view);
-            DisplayList(myList);
+            DisplayList(myList, _view);
         }
 
-        private List<string> GetList(ConsoleView _view)
+        private List<string> GetList(View _view)
         {
             string userResponse;
             var item = new List<string>();
@@ -44,13 +44,13 @@ namespace NET_Project_Runner
                 Console.Clear();
                 Console.CursorVisible = true;
 
-                Console.WriteLine($"Enter item {counter}: ");
+                _view.Display($"Enter item {counter}: ");
                 userResponse = Console.ReadLine();
                 item.Add(userResponse);
 
                 Console.CursorVisible = false;
-                Console.WriteLine("\nClick the right arrow to exit or any other key to add a new item.");
-                selection = _view.GetKey();
+                _view.Display("\nClick the right arrow to exit or any other key to add a new item.");
+                selection = (ConsoleKeyInfo) _view.GetKey();
 
                 counter++;
             }
@@ -58,17 +58,17 @@ namespace NET_Project_Runner
             return item;
         }
 
-        private static void DisplayList(List<string> item)
+        private static void DisplayList(List<string> item, View _view)
         {
             Console.Clear();
 
-            Console.WriteLine("Your List: \n");
+            _view.Display("Your List: \n");
             foreach (string p in item)
             {
-                Console.WriteLine(p);
+                _view.Display(p);
             }
 
-            Console.WriteLine();
+            _view.Display("");
         }
     }
 }

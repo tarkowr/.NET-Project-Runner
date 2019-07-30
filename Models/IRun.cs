@@ -11,6 +11,6 @@ namespace NET_Project_Runner.Models
     {
         int Id { get; set; }
         string Name { get; set; }
-        void Run (ConsoleView _view);
+        void Run (View _view);
     }
 }

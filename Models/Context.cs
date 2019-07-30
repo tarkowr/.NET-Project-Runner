@@ -30,28 +30,40 @@ namespace NET_Project_Runner.Models
             Projects = new List<IRun>()
             {
                 new GameTicks
-            {
-                Id = HandleId(),
-                Name = "Game Ticks"
-            },
+                {
+                    Id = HandleId(),
+                    Name = "Game Ticks"
+                },
 
                 new ListDemo
-            {
-                Id = HandleId(),
-                Name = "List Demo"
-            },
-            
+                {
+                    Id = HandleId(),
+                    Name = "List Demo"
+                },
+
                 new DateDemo
-            {
-                Id = HandleId(),
-                Name = "Date Demo"
-            },
+                {
+                    Id = HandleId(),
+                    Name = "Date Demo"
+                },
 
                 new UnicodeDemo
-            {
-                Id = HandleId(),
-                Name = "Unicode Demo"
-            }
+                {
+                    Id = HandleId(),
+                    Name = "Unicode Demo"
+                },
+
+                new FibonacciSequence
+                {
+                    Id = HandleId(),
+                    Name = "Fibonacci Sequence"
+                },
+
+                new FactorialCalculator
+                {
+                    Id = HandleId(),
+                    Name = "Factorial Calculator"
+                }
             };
         }
 

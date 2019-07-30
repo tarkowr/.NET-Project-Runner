@@ -5,19 +5,31 @@ using System.Linq;
 
 namespace NET_Project_Runner.Views
 {
-    public class ConsoleView
+    public class ConsoleView : View
     {
-        public void WaitForKey()
+        public override void WaitForUser()
         {
             Console.ReadKey();
         }
 
-        public void SetCursor(int x, int y)
+        public override void SetPosition(PositionModel positionModel)
         {
-            Console.SetCursorPosition(x, y);
+            Console.SetCursorPosition(positionModel.x, positionModel.y);
         }
 
-        public void ListProjects(List<IRun> projects, int selected)
+        public override void Display(string msg)
+        {
+            Console.WriteLine(msg);
+        }
+
+        public override object GetKey()
+        {
+            var i = new ConsoleKeyInfo();
+            i = Console.ReadKey(true);
+            return i;
+        }
+
+        public override void ListProjects(List<IRun> projects, int selected)
         {
             int ind = 1;
 
@@ -49,13 +61,6 @@ namespace NET_Project_Runner.Views
             {
                 Console.WriteLine($"\t{ind}. Exit");
             }
-        }
-
-        public ConsoleKeyInfo GetKey()
-        {
-            var i = new ConsoleKeyInfo();
-            i = Console.ReadKey(true);
-            return i;
         }
     }
 }

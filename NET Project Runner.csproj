@@ -44,7 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\Controller.cs" />
+    <Compile Include="Models\PositionModel.cs" />
     <Compile Include="Projects\DateDemo.cs" />
+    <Compile Include="Projects\FactorialCalculator.cs" />
+    <Compile Include="Projects\FibonacciSequence.cs" />
     <Compile Include="Projects\GameTicks.cs" />
     <Compile Include="Projects\ListDemo.cs" />
     <Compile Include="Projects\UnicodeDemo.cs" />
@@ -54,6 +57,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\ConsoleView.cs" />
+    <Compile Include="Views\View.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
